@@ -22,6 +22,7 @@
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+
 </head>
 
 <div id="Site_Container">
@@ -33,6 +34,13 @@
 		<h1>
 		Mobile Youth Atlanta
 		</h1>
+		</div>
+		<div id="text-container">
+		<div id="text">
+			<h2>
+			Help improve transit for children and families
+			</h2>
+		</div>
 		</div>
 		<div id="button-container">
 			<div id="button1">
@@ -48,6 +56,12 @@
 			</div>
 		</div>
 		<div id="footer">
+		<div id= "marta-army">
+		<img src="images/MARTAArmy.png" id="img1"></img>
+		</div>
+		<div id="myatl-logo">
+		<img src="images/MYATL.png" id="img2"></img>
+		</div>
 		</div>
 	</div>
 </div>
@@ -56,13 +70,47 @@
 
 
 <style>
+	@font-face 
+	{
+  		font-family: FredokaOne;
+  		src: url(FredokaOne-Regular.tff);
+	}
 	#header
 	{
 		text-align: center;
 		background: #00AEEF;
-		font-family: sans-serif;
+		font-family: FredokaOne-Regular;
 		font-weight: bold;
 		color: white;
+	}
+	h1
+	{
+		padding-bottom: 30px;
+
+	}
+	h2
+	{
+		font-weight: normal;
+	}
+	#text
+	{
+		text-align:center;
+		background-color: #F58220;
+		color: white;
+		font-family: FredokaOne-Regular;
+		font-weight: lighter;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 85px;
+		padding-right: 85px;
+		border-radius: 20px;
+
+	}
+	#text-container
+	{
+		display: flex;
+		margin-bottom: 20px;
+		margin-top: 30px;
 	}
 	#button-container
 	{
@@ -76,6 +124,8 @@
 		margin-left: auto;
 		background-color: #00AEEF;
 		border-radius: 20px;
+		font-family: FredokaOne-Regular;
+		font-size: 24px;
 
 	}
 
@@ -86,6 +136,9 @@
 		padding: 20px 50px 20px 50px;
 		background-color: #00AEEF;
 		border-radius: 20px;
+		font-family: FredokaOne-Regular;
+		font-size: 24px;
+
 
 	}
 
@@ -93,17 +146,48 @@
 	{
 		color: white;
 		text-decoration: none;
-		font-family: sans-serif;
+		font-family: FredokaOne-Regular;
 
 	}
 	a:hover
 	{
 		color: rgba(255,255,255,0.5);
 	}
+
+	#footer
+	{
+		background-color: #00AEEF;
+		display: flex;
+		position: fixed;
+   		left: 0;
+  		 bottom: 0;
+	}
+
+	#myatl-logo
+	{
+		width: 50%;
+	}
+	#marta-army
+	{
+		width: 50%;
+	}
+	#img1
+	{
+		width: 14%;
+		float: left;
+		padding: 10px 10px 10px 10px;
+	}
+	#img2
+	{
+		width: 10%;
+		float: right;
+		padding: 10px 10px 10px 10px;
+	}
 	body
 	{
 		margin: 0px;
 	}
+
 
 </style>
 
